@@ -1,0 +1,26 @@
+ALGORITHM check
+VAR
+    dali: CHAR;
+    cc,cw,cv : INTEGER:0;
+BEGIN
+    REPEAT
+        Write("donner un car");
+        Read("dali");
+        cc:= cc+1;
+        IF (dali=' ') THEN
+            cw:=cw+1;
+        END_IF
+
+        IF (dali='A' OR dali='O' OR dali='E' OR dali='U' ORdali='I' OR dali='Y' OR dali='a' OR dali='o' OR  dali='e' OR dali='u' ORdali='i' OR dali='y') THEN
+        cv:= cv+1;
+
+
+        END_IF
+
+    UNTIL (dali='.')
+    Write("le nobr de car est" cc);
+    Write("le nobr de word est", cw);
+    Write("le nobr de voy est",cv)
+
+
+END
